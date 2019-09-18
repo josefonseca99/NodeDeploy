@@ -1,6 +1,6 @@
-export default{
-
-    database:{
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = {
+    database: {
         type: "service_account",
         project_id: "nosmoke-53e82",
         private_key_id: "2c1ff718f29771672e9ce75f6081dcd8941fda7d",
@@ -12,5 +12,4 @@ export default{
         auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
         client_x509_cert_url: "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-sawty%40nosmoke-53e82.iam.gserviceaccount.com"
     }
-
-}
+};
