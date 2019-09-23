@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/3937fcf0-1cce-478e-b33b-70a7638dbd15/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/newlighter",
+    "appService.deploySubpath": ""
+}
