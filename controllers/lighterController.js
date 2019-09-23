@@ -4,11 +4,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const database_1 = __importDefault(require("../database"));
-class DataController {
+class LigtherController {
     data(req, res) {
         console.log(req.body);
-        console.log('funcionamiento');
-        res.json({ text: 'hola' });
+        console.log('funcionamiento lighter controller');
+        res.json({ text: 'funcionamiento del get' });
         //  res.json(db.collection('datosEncendedor').doc('81Y3vsbFVHhiiycMAVrS'));
         //   let observer = doc.onSnapshot((docSnapshot: any) => {          
         //     console.log(`Received doc snapshot: ${docSnapshot}`+docSnapshot.data().encendida);
@@ -19,7 +19,7 @@ class DataController {
     }
     create(req, res) {
         console.log(req.body);
-        database_1.default.collection("datosEncendedor").doc().set(req.body)
+        database_1.default.collection("referenciaEncendedor").doc().set(req.body)
             .then(function () {
             console.log("Documento esctrito");
         })
@@ -29,4 +29,4 @@ class DataController {
         res.json({ text: 'creating smoking data' });
     }
 }
-exports.dataController = new DataController();
+exports.lighterController = new LigtherController();

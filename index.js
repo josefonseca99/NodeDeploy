@@ -8,6 +8,7 @@ const morgan_1 = __importDefault(require("morgan"));
 const cors_1 = __importDefault(require("cors"));
 const indexRoutes_1 = __importDefault(require("./routes/indexRoutes"));
 const dataRoutes_1 = __importDefault(require("./routes/dataRoutes"));
+const lighterRoutes_1 = __importDefault(require("./routes/lighterRoutes"));
 class Server {
     constructor() {
         this.app = express_1.default();
@@ -24,6 +25,7 @@ class Server {
     routes() {
         this.app.use('/', indexRoutes_1.default);
         this.app.use('/api/data', dataRoutes_1.default);
+        this.app.use('/api/lighter', lighterRoutes_1.default);
     }
     start() {
         return this.app.listen(this.app.get('port'), () => {

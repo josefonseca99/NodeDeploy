@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "nodedeploy",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,7 +19,7 @@
   },
   "scripts": {
     "build": "tsc -w",
-    "dev": "nodemon index.js",
+    "dev": "nodemon build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
